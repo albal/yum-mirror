@@ -6,7 +6,6 @@ RUN apk add --no-cache rsync bash
 
 # Create a directory for the scripts and volumes for the mirror data
 RUN mkdir /scripts
-VOLUME ["/mirror"]
 
 # Copy the sync script into the container
 COPY sync-mirrors.sh /scripts/
