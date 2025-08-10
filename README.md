@@ -1,6 +1,6 @@
 # yum-mirror
 
-Docker container to mirror Centos 7 and Rocky Linux 8 & 9.
+Docker container to mirror Rocky Linux 8, 9 and 10.
 
 ## Running
 
