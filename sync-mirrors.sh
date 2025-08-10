@@ -2,8 +2,8 @@
 
 while true; do
     # Sync CentOS 7
-    mkdir -p /mirror/centos
-    rsync -avSHP --delete rsync://mirror.liquidtelecom.com/centos/7/ /mirror/centos/7/
+    # mkdir -p /mirror/centos
+    # rsync -avSHP --delete rsync://mirror.liquidtelecom.com/centos/7/ /mirror/centos/7/
 
     # Sync Rocky Linux 8
     mkdir -p /mirror/rocky
@@ -11,6 +11,10 @@ while true; do
 
     # Sync Rocky Linux 9
     rsync -avSHP --delete rsync://mirror.netzwerge.de/rocky-linux/9/ /mirror/rocky/9/
+
+    # Sync Rocky Linux 10
+    rsync -avSHP --delete rsync://mirror.netzwerge.de/rocky-linux/10/ /mirror/rocky/10/
+
 
     # Add any other sync commands needed here
 
